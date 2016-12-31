@@ -10,3 +10,6 @@
     font-weight: bold;
     font-style: normal;
 }
+body {
+  font-family: 'FiraCode' !important;
+}

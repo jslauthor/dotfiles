@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "FiraCode";
+    src: local("FuraCode NF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FiraCode";
+    src: local("FuraCode NF");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "FiraCode";
+    src: local("FuraCode NF");
+    font-weight: normal;
+    font-style: italic;
+}

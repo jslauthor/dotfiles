@@ -1,12 +1,12 @@
 @font-face {
     font-family: "FiraCode";
-    src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fura%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf?raw=true");
+    src: local("FuraCode NF"), url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fura%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf?raw=true");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "FiraCode";
-    src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Bold/complete/Fura%20Code%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf?raw=true");
+    src: local("FuraCode NF"), url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Bold/complete/Fura%20Code%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf?raw=true");
     font-weight: bold;
     font-style: normal;
 }

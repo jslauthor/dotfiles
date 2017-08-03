@@ -110,3 +110,15 @@ vmap <C-s> <esc>:w<CR>gv
 
 " FZF
 map <C-p> :FZF<CR>
+
+" In normal mode make them resize windows.
+nnoremap <Left> :exec "vertical resize +" . (&columns * 1/6)<CR>
+nnoremap <Right> :exec "vertical resize -" . (&columns * 1/6)<CR>
+nnoremap <Down> :exec "resize -" . (&lines * 1/6)<CR>
+nnoremap <Up> :exec "resize +" . (&lines * 1/6)<CR>
+
+" Common mistyped commands.
+command W w
+command Wq wq
+command WQ wq
+command Q q

@@ -28,6 +28,7 @@ if (!has("gui_vimr"))
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 endif
 Plug 'ryanoasis/vim-devicons'
+Plug 'ervandew/supertab'
 call plug#end()
 
 " NERDTree

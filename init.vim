@@ -32,8 +32,8 @@ call plug#end()
 
 " NERDTree
 
-map ] :NERDTreeFind<CR>
-map [ :NERDTreeToggle<CR>
+map [ :NERDTreeFind<CR>
+map ] :NERDTreeToggle<CR>
 
 " Omnifunc
 filetype plugin on
@@ -51,15 +51,18 @@ endif
 
 set background=dark
 syntax on
-colorscheme ChocolatePapaya
+colorscheme grb256
 
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 
 " Ale
 let g:airline#extensions#ale#enabled = 1
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
+let g:ale_sign_column_always = 1
+let g:ale_sign_error='✗'
+let g:ale_sign_warning='⚠'
+let g:ale_echo_msg_error_str = '✗'
+let g:ale_echo_msg_warning_str = '⚠'
 
 " Syntastic
 " set statusline+=%#warningmsg#
@@ -129,3 +132,6 @@ command! W w
 command! Wq wq
 command! WQ wq
 command! Q q
+
+" Turn off case sensitivity
+set ic

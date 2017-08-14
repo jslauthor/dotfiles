@@ -30,6 +30,11 @@ endif
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+" NERDTree
+
+map ] :NERDTreeFind<CR>
+map [ :NERDTreeToggle<CR>
+
 " Omnifunc
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete

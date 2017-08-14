@@ -1,6 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 " Plug 'scrooloose/syntastic'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'w0rp/ale'
 Plug 'mhartington/oceanic-next'
 Plug 'flazz/vim-colorschemes'
@@ -21,6 +22,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'tyru/open-browser-github.vim'
 Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/tComment'
+Plug 'tpope/vim-obsession'
 if (!has("gui_vimr"))
   Plug 'scrooloose/nerdtree'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -44,10 +46,10 @@ endif
 
 set background=dark
 syntax on
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme gruvbox
-let g:airline_theme='oceanicnext'
+colorscheme ChocolatePapaya
+
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
 
 " Ale
 let g:airline#extensions#ale#enabled = 1
@@ -81,10 +83,10 @@ let g:multi_cursor_quit_key='<Esc>'
 :nnoremap <S-J> 5jzz
 :nnoremap <S-k> 5kzz
 
-:nnoremap <C-J> <C-W><C-J>
-:nnoremap <C-K> <C-W><C-K>
-:nnoremap <C-L> <C-W><C-L>
-:nnoremap <C-H> <C-W><C-H>
+" :nnoremap <C-J> <C-W><C-J>
+" :nnoremap <C-K> <C-W><C-K>
+" :nnoremap <C-L> <C-W><C-L>
+" :nnoremap <C-H> <C-W><C-H>
 
 :nnoremap <Tab> :bnext<CR>
 :nnoremap <S-Tab> :bprevious<CR>
@@ -118,7 +120,7 @@ nnoremap <Down> :exec "resize -" . (&lines * 1/6)<CR>
 nnoremap <Up> :exec "resize +" . (&lines * 1/6)<CR>
 
 " Common mistyped commands.
-command W w
-command Wq wq
-command WQ wq
-command Q q
+command! W w
+command! Wq wq
+command! WQ wq
+command! Q q
